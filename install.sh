@@ -4,9 +4,12 @@ CONFIG_ROOT=$HOME/.config/nvim
 
 # Create folder structure
 mkdir -p $CONFIG_ROOT
-mkdir -p $CONFIG_ROOT/general
-mkdir -p $CONFIG_ROOT/keys
-mkdir -p $CONFIG_ROOT/plugs
+
+folders=(general keys plugs)
+for folder in ${folders[@]}
+do
+  mkdir -p $CONFIG_ROOT/$folder
+done
 
 if [ ! -f "$CONFIG_ROOT/autoload/plug.vim" ]; then
     # Install vim-plug
