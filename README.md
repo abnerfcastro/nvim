@@ -7,3 +7,5 @@
 ```
 brew install neovim
 ```
+
+Run the `install.sh` file to set up neovim
