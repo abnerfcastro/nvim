@@ -42,3 +42,9 @@ nnoremap <C-l> <C-w>l
 
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da"
+
+" fzf mappings
+nnoremap <silent> <C-f> :Files<CR>
+nnoremap <silent> <Leader>f :Files<CR>
+nnoremap <silent> <Leader>l :Lines<CR>
+nnoremap <silent> <Leader>b :BLines<CR>
