@@ -28,7 +28,7 @@ nnoremap <C-Q> :wq!<CR>
 " Use control-c instead of escape
 nnoremap <C-c> <Esc>
 " <TAB>: completion.
-inoremap <expr><TAB> pumvisible() ? \<C-n>" : "\<TAB>"
+" inoremap <expr><TAB> pumvisible() ? \<C-n>" : "\<TAB>"
 
 " Better tabbing
 vnoremap < <gv
@@ -48,3 +48,9 @@ nnoremap <silent> <C-f> :Files<CR>
 nnoremap <silent> <Leader>f :Files<CR>
 nnoremap <silent> <Leader>l :Lines<CR>
 nnoremap <silent> <Leader>b :BLines<CR>
+
+" NERDTree mappings
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
